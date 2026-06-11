@@ -99,5 +99,23 @@
 
             sensor-bindings = <&inc_dec_kp C_AC_ZOOM_OUT C_AC_ZOOM_IN>;
         };
+
+        MOUSE {
+            bindings = <
+&trans  &none        &none        &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &none                          &none      &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &none        &none        &trans
+&trans  &lt 5 SPACE  &lt 4 SPACE  &mkp MCLK        &mkp LCLK          &mkp RCLK  &trans    &mkp MB4  &mkp LCLK  &mkp RCLK        &mkp MCLK          &lt 4 SPACE  &lt 5 SPACE  &trans
+&trans  &lt 5 SPACE  &lt 4 SPACE  &mkp MCLK        &mkp LCLK          &mkp RCLK  &trans    &mkp MB5  &mkp LCLK  &mkp RCLK        &mkp MCLK          &lt 4 SPACE  &lt 5 SPACE  &trans
+&trans  &trans       &trans       &trans           &trans             &trans     &trans    &trans    &trans                                                      &trans       &trans
+            >;
+        };
+
+        SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans  &trans
+            >;
+        };
     };
 };
