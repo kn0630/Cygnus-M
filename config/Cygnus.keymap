@@ -69,10 +69,10 @@
 
         FUNCTION-NUMBER {
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                   &kp NUMBER_6  &kp N7         &kp N8       &kp N9     &kp N0         &trans
-&trans  &kp F2        &kp F3        &kp F4        &kp F5        &kp F6   &trans    &kp GRAVE             &kp HOME      &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp BACKSLASH  &trans
-&trans  &kp F7        &kp F8        &kp F9        &kp F10       &kp F11  &trans    &kp F12               &mkp LCLK     &mkp RCLK      &kp MINUS    &kp EQUAL  &kp SQT        &trans
-&trans  &trans        &trans        &trans        &trans        &trans   &trans    &lt 3 K_CONTEXT_MENU  &trans                                               &trans         &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                  &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &trans
+&trans  &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &trans    &kp GRAVE             &kp HOME      &kp PAGE_DOWN  &kp PAGE_UP   &kp END       &kp BACKSLASH  &trans
+&trans  &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &trans    &kp F12               &mkp LCLK     &mkp RCLK      &kp MINUS     &kp EQUAL     &kp SQT        &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &trans    &lt 3 K_CONTEXT_MENU  &trans                                                   &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -80,10 +80,10 @@
 
         SYMBOL {
             bindings = <
-&trans  &trans           &trans         &trans        &trans                &trans                                        &trans     &trans     &trans        &trans     &trans  &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp POUND     &kp DOLLAR            &kp PERCENT            &kp K_MUTE     &none   &kp LEFT   &kp DOWN   &kp UP_ARROW  &kp RIGHT  &none   &trans
-&trans  &kp LCTRL        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &none   &mkp LCLK  &mkp RCLK  &none         &none      &none   &trans
-&trans  &trans           &trans         &trans        &trans                &trans                 &lt 3 ENTER    &trans  &trans                                         &trans  &trans
+&trans  &kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4          &kp NUMBER_5                                  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp POUND     &kp DOLLAR            &kp PERCENT            &kp K_MUTE     &none   &kp LEFT      &kp DOWN      &kp UP_ARROW  &kp RIGHT     &none         &trans
+&trans  &kp LCTRL        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &none   &mkp LCLK     &mkp RCLK     &none         &none         &none         &trans
+&trans  &trans           &trans         &trans        &trans                &trans                 &lt 3 ENTER    &trans  &trans                                                  &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOLUME_UP>;
@@ -91,10 +91,10 @@
 
         SHORTCUT-CONTROL {
             bindings = <
-&trans  &trans     &trans     &trans     &trans     &trans                               &trans          &trans          &trans        &trans           &trans        &trans
-&trans  &kp LC(A)  &kp LC(S)  &none      &none      &none      &bt BT_CLR_ALL    &none   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none         &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans            &none   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4  &trans
-&trans  &trans     &trans     &trans     &trans     &trans     &trans            &trans  &trans                                                         &trans        &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                            &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0  &trans
+&trans  &kp LC(A)     &kp LC(S)     &none         &none         &none         &bt BT_CLR_ALL    &none   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none         &trans
+&trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(B)     &trans            &none   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4  &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &trans            &trans  &trans                                                         &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_AC_ZOOM_OUT C_AC_ZOOM_IN>;
@@ -107,6 +107,8 @@
 &trans  &lt 5 SPACE  &lt 4 SPACE  &mkp MCLK        &mkp LCLK          &mkp RCLK  &trans    &mkp MB5  &mkp LCLK  &mkp RCLK        &mkp MCLK          &lt 4 SPACE  &lt 5 SPACE  &trans
 &trans  &trans       &trans       &trans           &trans             &trans     &trans    &trans    &trans                                                      &trans       &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) RC(PAGE_DOWN)>;
         };
 
         SCROLL {
